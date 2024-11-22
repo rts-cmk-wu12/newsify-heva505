@@ -1,0 +1,185 @@
+@use '_resets';
+@use '_auth';
+@use '_home';
+@use '_settings';
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.newsify-logo {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  text-align: center;
+}
+
+.newsify-heading {
+  margin-top: 20px;
+  font-size: 2em;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.sign-in-button {
+  background-color: #4D861F;
+}
+
+// Base styles for mobile-first approach
+/* Onboarding styles */
+.onboarding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+}
+
+.onboard_img {
+  width: 100%;
+  max-width: 392px;
+  height: auto;
+}
+
+.onboard_heading {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.onboard_writing {
+  font-size: 1em;
+  color: #666;
+  text-align: center;
+  margin: 0 1em;
+}
+
+.swap {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 0.5em;
+
+  .dot,
+  .first_dot {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+    &.active {
+      width: 35px;
+      background-color: #4D861F;
+      border-radius: 5px;
+    }
+  }
+}
+
+.onboard_button {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  .skip_button,
+  .continue_button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    width: 45%;
+  }
+
+  .skip_button {
+    color: #4D861F;
+    border-color: #4D861F;
+    background-color: #fff;
+  }
+
+  .continue_button {
+    color: #fff;
+    background-color: #4D861F;
+  }
+}
+/*
+//Tablet styles 
+@media (min-width: 768px) {
+  .onboarding {
+    flex-direction: row;
+  }
+
+  .onboard_img {
+    width: 50%;
+  }
+
+  .onboard_heading {
+    font-size: 2em;
+  }
+
+  .onboard_writing {
+    font-size: 1.2em;
+    margin: 0 2em;
+  }
+
+  .skip_button,
+  .continue_button {
+    padding: 12px 24px;
+  }
+}
+
+// Desktop styles 
+@media (min-width: 1024px) {
+  .onboarding {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .onboard_img {
+    width: 30%;
+  }
+
+  .onboard_heading {
+    font-size: 2.5em;
+  }
+
+  .onboard_writing {
+    font-size: 1.5em;
+    margin: 0 3em;
+  }
+
+  .skip_button,
+  .continue_button {
+    padding: 15px 30px;
+  }
+}*/
+
+ 
+ 

@@ -1,0 +1,109 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/_home.scss ***!
+  \**************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  display: block;
+}
+
+#wrapper {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container {
+  width: 393px;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.searchbar-under-logo input {
+  width: 345px;
+  height: 46px;
+  background-color: rgba(217, 217, 217, 0.1882352941);
+  color: rgba(34, 34, 34, 0.2509803922);
+  padding-left: 20px;
+}
+
+.faq-section {
+  width: 393px;
+}
+.faq-section .faq {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.faq-section .faq li {
+  border-bottom: 1px solid #C5C5C5;
+  padding: 16px 0;
+}
+.faq-section .faq li:first-child {
+  border-top: 1px solid #C5C5C5;
+}
+.faq-section .q {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  padding-left: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+.faq-section .arrow {
+  display: inline-block;
+  margin: 0;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 10px solid #555;
+  border-bottom: 6px solid transparent;
+  transition: transform 0.3s ease;
+}
+.faq-section .arrow-box {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 20px;
+}
+.faq-section .a {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+  padding: 0;
+}
+.faq-section .a-opened {
+  height: auto;
+  padding: 10px 0;
+}
+.faq-section .arrow-rotated {
+  transform: rotate(90deg);
+}
+
+nav {
+  height: 90px;
+  width: 393px;
+  display: flex;
+  margin: 0 auto;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.066);
+}
