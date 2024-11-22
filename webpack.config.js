@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -37,6 +38,9 @@ module.exports = {
      
     ]
   },
+
+
+
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css',
@@ -61,7 +65,15 @@ module.exports = {
       filename: 'auth.html',
       chunks: ['auth']
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: "public", to: "" },
+      
+      ],
+    }),
+
   ],
+
   resolve: {
     extensions: ['.js', '.scss']
   }

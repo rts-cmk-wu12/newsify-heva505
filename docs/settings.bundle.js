@@ -9,14 +9,14 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/sass/_stayle.scss":
-/*!*******************************!*\
-  !*** ./src/sass/_stayle.scss ***!
-  \*******************************/
+/***/ "./src/sass/_settings.scss":
+/*!*********************************!*\
+  !*** ./src/sass/_settings.scss ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/sass/_stayle.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/sass/_settings.scss?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("__webpack_require__(/*! ../sass/_stayle.scss */ \"./src/sass/_stayle.scss\")\r\n\r\n\r\n\r\nconst htmlContainer = document.getElementById('html-container');\r\nconst bodyContainer = document.getElementById('body-container');\r\nconst container = document.getElementById('container');\r\nconst darkModeToggle = document.getElementById('dark-mode-toggle');\r\n\r\ndarkModeToggle.addEventListener('change', () => {\r\n  htmlContainer.classList.toggle('dark-mode');\r\n  bodyContainer.classList.toggle('dark-mode');\r\n  container.classList.toggle('dark-mode');\r\n});\n\n//# sourceURL=webpack:///./src/js/settings.js?");
+eval("__webpack_require__(/*! ../sass/_settings.scss */ \"./src/sass/_settings.scss\")\r\n\r\n\r\n\r\nconst htmlContainer = document.getElementById('html-container');\r\nconst bodyContainer = document.getElementById('body-container');\r\nconst container = document.getElementById('container');\r\nconst darkModeToggle = document.getElementById('dark-mode-toggle');\r\n\r\ndarkModeToggle.addEventListener('change', () => {\r\n  htmlContainer.classList.toggle('dark-mode');\r\n  bodyContainer.classList.toggle('dark-mode');\r\n  container.classList.toggle('dark-mode');\r\n});\n\n//# sourceURL=webpack:///./src/js/settings.js?");
 
 /***/ })
 
